@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="jcbTracks" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="10" filename="$data/shared/crawlers/newHolland/c232Crawler/c232CrawlerArray.png"/>
+    <File fileId="8" filename="$data/shared/crawlers/newHolland/c232Crawler/c232CrawlerTracknormal.png"/>
+    <File fileId="9" filename="$data/shared/crawlers/newHolland/c232Crawler/c232CrawlerTrackvmask.png"/>
+    <File fileId="2" filename="../3TS/jcb3TS_normal.png"/>
+    <File fileId="3" filename="../3TS/jcb3TS_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="c232CrawlerTrackmat" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="motionPathRubber_secondUV_colorMask">
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <Custommap name="mTrackArray" fileId="10"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="scrollPosition" value="0 0 0 0"/>
+      <CustomParameter name="prevScrollPosition" value="0 0 0 0"/>
+      <CustomParameter name="lengthAndRadius" value="2 0.5 0 0"/>
+    </Material>
+    <Material name="jcb3TS_mat" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.966 0.437 0.0143 1"/>
+      <CustomParameter name="colorMat1" value="1 0 0 0"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 3"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="jcbTracks.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="jcbTracks" nodeId="28">
+        <Shape shapeId="1" name="crawler_left" clipDistance="300" nodeId="29" materialIds="5" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="trackLeft" translation="0 -0.00200629 -0.035004" clipDistance="300" nodeId="30" lodDistance="0 50">
+            <Shape shapeId="2" name="trackLeftLOD0" clipDistance="300" nodeId="31" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="trackLeftLOD1" clipDistance="300" nodeId="32" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="4" name="wheelTop1" translation="-0.0040633 0.32003 0.257988" clipDistance="300" nodeId="33" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="wheelFront1" translation="-0.000740662 0.0266397 1.5627" clipDistance="300" nodeId="34" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="wheelBack1" clipDistance="300" nodeId="35" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="wheel6" translation="-4.40979e-05 -0.0841195 1.24332" clipDistance="300" nodeId="36" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="8" name="wheel7" translation="-4.45557e-05 -0.0841196 1.00545" clipDistance="300" nodeId="37" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="9" name="wheel8" translation="-4.44031e-05 -0.0841196 0.755244" clipDistance="300" nodeId="38" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="10" name="wheel9" translation="-4.50134e-05 -0.0841195 0.524774" clipDistance="300" nodeId="39" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="wheel10" translation="-4.50134e-05 -0.0841196 0.290255" clipDistance="300" nodeId="40" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="12" name="crawler_right" clipDistance="300" nodeId="42" materialIds="5" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="trackRight" translation="0 -0.00200629 -0.035004" clipDistance="300" nodeId="43" lodDistance="0 50">
+            <Shape shapeId="13" name="trackRightLOD0" clipDistance="300" nodeId="44" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="14" name="trackRightLOD1" clipDistance="300" nodeId="45" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="15" name="wheelTop" translation="0.00406305 0.320029 0.257988" clipDistance="300" nodeId="46" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="16" name="wheelFront" translation="0.000740891 0.0266396 1.5627" clipDistance="300" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="17" name="wheelBack" clipDistance="300" nodeId="48" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="18" name="wheel1" translation="0.0003508 -0.0841196 1.24332" clipDistance="300" nodeId="49" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="18" name="wheel2" translation="0.000351334 -0.0841197 1.00545" clipDistance="300" nodeId="50" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="18" name="wheel3" translation="0.000351105 -0.0841197 0.755244" clipDistance="300" nodeId="51" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="18" name="wheel4" translation="0.000351105 -0.0841197 0.528619" clipDistance="300" nodeId="52" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="18" name="wheel5" translation="0.000351715 -0.0841197 0.286237" clipDistance="300" nodeId="53" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

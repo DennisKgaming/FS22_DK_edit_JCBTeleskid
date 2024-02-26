@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="71">
+    <author>ARM-Team</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>JCB Teleskid</en>
+    </title>
+    <description>
+        <en>
+<![CDATA[JCB Teleskid
+Models: 3TS-8W, 3TS-8T
+
+Features:
+- Wheels configurations
+- Windows configurations
+- Beacon configurations
+- Body color configurations
+- Rim color configurations
+- Design configurations
+
+Horsepower: 74 HP
+Speed: 20 kph
+Price: 58000 $
+]]>
+        </en>
+        <de>
+<![CDATA[JCB Teleskid
+Modelle: 3TS-8W, 3TS-8T
+
+Eigenschaften:
+- Reifen konfigurierbar
+- Fenster konfigurierbar
+- RUL konfigurierbar
+- Farbkonfigurationen
+- Felgenfarbe konfigurierbar
+- Designkonfigurationen
+
+Leistung: 74 PS
+Geschwindigkeit: 20 km/h
+Preis: 58000 €
+]]>
+        </de>
+    </description>
+    <iconFilename>icon_jcb3TS.dds</iconFilename>
+    <multiplayer supported="true" />
+	
+	<l10n>
+		<text name="NOTINT">
+			<en>Clean windows</en>
+			<de>Scheiben normal</de>
+		</text>
+		<text name="TINT">
+			<en>Tint windows</en>
+			<de>Scheiben getönt</de>
+		</text>
+		<text name="withFGrid">
+			<en>With forest grid</en>
+			<de>Mit Forstgitter</de>
+		</text>
+		<text name="withGrid">
+			<en>With grid</en>
+			<de>Mit Gitter</de>
+		</text>
+		<text name="withGFGrid">
+			<en>With grid and forest grid</en>
+			<de>Mit Gitter und Forstgitter</de>
+		</text>
+		<text name="NOBEACON">
+			<en>Without beacons</en>
+			<de>Ohne RUL</de>
+		</text>
+		<text name="BEACON">
+			<en>With beacons</en>
+			<de>Mit RUL</de>
+		</text>
+		<text name="teleskidbeacons">
+			<en>Beacon lights</en>
+			<de>Rundumleuchten</de>
+		</text>
+		<text name="configuration_win">
+			<en>Windows</en>
+			<de>Fenster</de>
+		</text>
+		<text name="3TS-8W Wide">
+			<en>3TS-8W Wide</en>
+			<de>3TS-8W Breit</de>
+		</text>
+	</l10n>
+
+    <storeItems>
+        <storeItem xmlFilename="3TS.xml"/>
+    </storeItems>
+</modDesc>
